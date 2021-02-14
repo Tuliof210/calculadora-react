@@ -8,6 +8,8 @@
   border-bottom: $btnBorder;
 
   outline: none;
+  transition-property: all;
+  transition-duration: 0.2s;
   cursor: pointer;
 }
 .btn:active {
