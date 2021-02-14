@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from 'react';
 // my components
 import Button from '../components/button/Button';
+import Display from '../components/display/Display';
 // styles
 import './Calculator.scss';
 
@@ -28,6 +29,7 @@ export default class Calculator extends Component {
   render() {
     return (
       <div className="calculator-wrapper">
+        <Display value={200} />
         {btnList.map(btn => (
           <Button label={btn.label} />
         ))}

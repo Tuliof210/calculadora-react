@@ -1,7 +1,7 @@
 @import '../assets/styles/styles.scss';
 
 .calculator-wrapper {
-  height: 450px;
+  height: 400px;
   width: 300px;
 
   margin-top: 20px;
@@ -16,4 +16,6 @@
   // template de coluna => 4 colunas cada uma ocupando 25%(1/4) do espaço
   display: grid;
   grid-template-columns: repeat(4, 25%);
+  // template de linha => cada linha (5, ocupando 50px)
+  grid-template-rows: 1fr repeat(5, 50px);
 }
