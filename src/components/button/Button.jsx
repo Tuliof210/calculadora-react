@@ -11,9 +11,17 @@ import './Button.scss';
 export default props => {
   const classes = [
     'btn',
-    `${props['double'] ? 'double' : ''}`,
-    `${props['triple'] ? 'triple' : ''}`,
-    `${props['operator'] ? 'operator' : ''}`,
+    props['double'] ? 'double' : '',
+    props['triple'] ? 'triple' : '',
+    props['operator'] ? 'operator' : '',
   ];
-  return <button className={classes.join(' ')}>{props['label']}</button>;
+  // So executa a função se passar pela condicional &&
+  return (
+    <button
+      onClick={e => props.click && props.click(props['label'])}
+      className={classes.join(' ')}
+    >
+      {props['label']}
+    </button>
+  );
 };
