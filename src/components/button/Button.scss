@@ -1,0 +1,32 @@
+@import '../../assets/styles/styles.scss';
+
+.btn {
+  font-size: 1.4em;
+  background-color: $btnBackGround;
+  border: none;
+  border-right: $btnBorder;
+  border-bottom: $btnBorder;
+
+  outline: none;
+  transition-property: all;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.btn:active {
+  background-color: $btnActiveBG;
+}
+
+.btn.double {
+  grid-column: span 2;
+}
+.btn.triple {
+  grid-column: span 3;
+}
+
+.btn.operator {
+  background-color: $operatorBG;
+  color: $fontColor;
+}
+.btn.operator:active {
+  background-color: $operatorActiveBG;
+}

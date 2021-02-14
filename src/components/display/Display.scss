@@ -1,0 +1,14 @@
+@import '../../assets/styles/styles.scss';
+
+.display {
+  grid-column: span 4;
+  background-color: #fff5;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 15px;
+  font-size: 2.5em;
+  overflow: hidden;
+}
