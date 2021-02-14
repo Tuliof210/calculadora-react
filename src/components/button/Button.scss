@@ -13,3 +13,18 @@
 .btn:active {
   background-color: $btnActiveBG;
 }
+
+.btn.double {
+  grid-column: span 2;
+}
+.btn.triple {
+  grid-column: span 3;
+}
+
+.btn.operator {
+  background-color: $operatorBG;
+  color: $fontColor;
+}
+.btn.operator:active {
+  background-color: $operatorActiveBG;
+}

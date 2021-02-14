@@ -8,4 +8,12 @@ import React from 'react';
 // styles
 import './Button.scss';
 
-export default props => <button className="btn">{props['label']}</button>;
+export default props => {
+  const classes = [
+    'btn',
+    `${props['double'] ? 'double' : ''}`,
+    `${props['triple'] ? 'triple' : ''}`,
+    `${props['operator'] ? 'operator' : ''}`,
+  ];
+  return <button className={classes.join(' ')}>{props['label']}</button>;
+};
