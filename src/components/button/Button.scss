@@ -1,0 +1,15 @@
+@import '../../assets/styles/styles.scss';
+
+.btn {
+  font-size: 1.4em;
+  background-color: $btnBackGround;
+  border: none;
+  border-right: $btnBorder;
+  border-bottom: $btnBorder;
+
+  outline: none;
+  cursor: pointer;
+}
+.btn:active {
+  background-color: $btnActiveBG;
+}

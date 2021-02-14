@@ -1,12 +1,19 @@
-@import '../assets/styles/colors.scss';
+@import '../assets/styles/styles.scss';
 
 .calculator-wrapper {
   height: 450px;
   width: 300px;
+
   margin-top: 20px;
   border: none;
   border-radius: 5px;
+
   overflow: hidden;
   background-color: $backGround;
   box-shadow: 0 2px 7px $shadow;
+
+  // Exemplo de template grid
+  // template de coluna => 4 colunas cada uma ocupando 25%(1/4) do espaço
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
 }
