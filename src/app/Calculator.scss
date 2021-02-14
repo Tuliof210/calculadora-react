@@ -1,0 +1,11 @@
+@import '../assets/styles/colors.scss';
+
+.calculator-wrapper {
+  height: 450px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: $backGround;
+  box-shadow: 0 2px 7px $shadow;
+}
