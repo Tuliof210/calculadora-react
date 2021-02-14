@@ -1,4 +1,26 @@
+@import './assets/styles/colors.scss';
 @font-face {
   font-family: 'RobotoMono';
   src: url('./assets/fonts/RobotoMono-Light.ttf');
+}
+
+// Set default constants for the app
+* {
+  font-family: 'RobotoMono', monospace;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+// Set default display for the app
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: $fontColor;
+  background: linear-gradient(to right, $fromColor, $toColor);
 }
